@@ -1,0 +1,21 @@
+<div class="container py-4">
+  <div class="card shadow-sm rounded-4 border-0" style="background-color: #f9e3ed;">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4" style="color: #a95c7a;">🧠 Login to Your Account</h2>
+
+      <form (ngSubmit)="onLogin()">
+        <div class="mb-3">
+          <label for="email" class="form-label" style="color: #a95c7a;">Email</label>
+          <input type="email" class="form-control" id="email" [(ngModel)]="login.email" name="email" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label" style="color: #a95c7a;">Password</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="login.password" name="password" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" style="background-color: #a95c7a;">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

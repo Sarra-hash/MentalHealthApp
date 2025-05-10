@@ -1,0 +1,20 @@
+<div class="diary-container">
+  <h2>📝 How are you feeling today?</h2>
+
+  <form (ngSubmit)="submitMood()" #moodForm="ngForm">
+    <label for="mood">Select your mood:</label>
+    <select id="mood" name="mood" [(ngModel)]="mood">
+      <option value="" disabled selected>Choose one</option>
+      <option value="happy">😊 Happy</option>
+      <option value="sad">😢 Sad</option>
+      <option value="anxious">😟 Anxious</option>
+      <option value="angry">😠 Angry</option>
+      <option value="neutral">😐 Neutral</option>
+    </select>
+
+    <label for="note">Describe your feelings:</label>
+    <textarea id="note" name="note" rows="4" [(ngModel)]="note" placeholder="Write what's on your mind..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

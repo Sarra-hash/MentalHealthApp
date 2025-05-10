@@ -1,0 +1,11 @@
+.container {
+  max-width: 500px;
+}
+
+.card {
+  background-color: #fff0f5;
+}
+
+.card-body {
+  padding: 2rem;
+}

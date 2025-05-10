@@ -1,0 +1,12 @@
+<div class="container text-center py-5">
+  <h2 style="color: #a95c7a;">🧘‍♀️ 1-Minute Breathing Exercise</h2>
+
+  <button class="btn btn-lg mb-4" style="background-color: #a95c7a; color: white;" (click)="startBreathing()">
+    Start Breathing
+  </button>
+
+  <div *ngIf="showBreath" class="breath-container">
+    <div class="circle" [ngClass]="breathStage"></div>
+    <h3 class="mt-4" style="color: #a95c7a;">{{ breathInstruction }}</h3>
+  </div>
+</div>

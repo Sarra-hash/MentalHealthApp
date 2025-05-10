@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div class="card text-center shadow p-4">
+    <h2 class="mb-3">Welcome to your Profile</h2>
+    
+    <p class="lead">Email: {{ userEmail }}</p>
+
+    <div class="mt-4">
+      <a routerLink="/diary" class="btn btn-outline-primary me-2">Go to Diary</a>
+      <a routerLink="/recommendations" class="btn btn-outline-success me-2">Get Recommendations</a>
+      <button (click)="logout()" class="btn btn-danger">Logout</button>
+    </div>
+  </div>
+</div>

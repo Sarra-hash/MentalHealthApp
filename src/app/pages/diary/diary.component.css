@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #a95c7a;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 0.8rem;
+  border: 1px solid #c97a98;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #a95c7a;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8a4b63;
+}
+
+p {
+  text-align: center;
+  color: #4d4d4d;
+  font-style: italic;
+}

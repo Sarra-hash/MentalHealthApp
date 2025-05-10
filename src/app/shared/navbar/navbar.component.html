@@ -1,0 +1,9 @@
+<nav class="navbar">
+  <a routerLink="/" routerLinkActive="active">Home</a>
+
+  <a *ngIf="isLoggedIn()" routerLink="/diary">Diary</a>
+  <a *ngIf="isLoggedIn()" routerLink="/recommendations">Recommendations</a>
+  <button *ngIf="isLoggedIn()" class="logout-btn" (click)="logout()">Logout</button>
+
+  <a *ngIf="!isLoggedIn()" routerLink="/login">Login</a>
+</nav>

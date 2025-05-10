@@ -1,0 +1,59 @@
+.recommendations {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.recommendations h2 {
+  color: #a95c7a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.recommendations label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #a95c7a;
+}
+
+.recommendations select {
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #c97a98;
+  margin-bottom: 1rem;
+}
+
+.recommendations ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: #4d4d4d;
+}
+
+.recommendations select {
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #c97a98;
+  background-color: #fbe8ed; /* soft rose background */
+  color: #4d4d4d;
+  font-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23a95c7a' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1.2rem;
+  cursor: pointer;
+}
+
+.recommendations option {
+  background-color: #fff0f5; /* light lilac-rose background */
+  color: #4d4d4d;
+  padding: 0.5rem;
+}

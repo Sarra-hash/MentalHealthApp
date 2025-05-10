@@ -1,0 +1,24 @@
+<div class="memory-container text-center">
+  <h2 class="mb-4" style="color: #a95c7a;">🧠 Memory Game</h2>
+  <div class="card-grid">
+    <div
+      class="card"
+      *ngFor="let card of cards"
+      (click)="flipCard(card)"
+      [class.flipped]="card.flipped || card.matched"
+    >
+      <div class="card-inner">
+        <div class="card-front"></div>
+        <div class="card-back">{{ card.icon }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Popup for when the game is won -->
+<div *ngIf="gameCompleted" class="popup-overlay">
+  <div class="popup-content">
+    <h3>🎉 Congratulations! You Won! 🎉</h3>
+    <button class="btn btn-lg" (click)="closePopup()">Close</button>
+  </div>
+</div>

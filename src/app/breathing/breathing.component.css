@@ -1,0 +1,27 @@
+.breath-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #f5a7d6;
+  border-radius: 50%;
+  transition: transform 4s ease-in-out;
+}
+
+.inhale {
+  transform: scale(1.4);
+}
+
+.exhale {
+  transform: scale(0.8);
+}
+
+.hold {
+  transform: scale(1); /* or keep last state */
+}

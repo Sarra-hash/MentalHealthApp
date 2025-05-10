@@ -1,0 +1,30 @@
+<div class="container py-4">
+  <div class="card shadow-sm rounded-4 border-0" style="background-color: #f9e3ed;">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4" style="color: #a95c7a;">🧠 Recommendations for Your Well-being</h2>
+
+      <div class="mb-3">
+        <label for="mood" class="form-label fw-semibold" style="color: #a95c7a;">Choose Your Mood:</label>
+        <select
+          class="form-select"
+          [(ngModel)]="selectedMood"
+          (change)="showTips()"
+          style="border-color: #c97a98; background-color: #fff0f5; color: #4d4d4d;">
+          <option value="" disabled selected>-- Select --</option>
+          <option value="happy">😊 Happy</option>
+          <option value="sad">😢 Sad</option>
+          <option value="anxious">😟 Anxious</option>
+          <option value="angry">😠 Angry</option>
+          <option value="neutral">😐 Neutral</option>
+        </select>
+      </div>
+
+      <div *ngIf="tips.length > 0" class="mt-4">
+        <h5 class="fw-bold" style="color: #a95c7a;">Here are some tips for you:</h5>
+        <ul class="list-group list-group-flush mt-2">
+          <li *ngFor="let tip of tips" class="list-group-item" style="color: #4d4d4d;"> {{ tip }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
